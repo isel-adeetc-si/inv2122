@@ -13,7 +13,7 @@ public class KeystoreDemo {
         KeyStore keystore = KeyStore.getInstance("PKCS12");
         FileInputStream fisKeyStore =
             new FileInputStream("<some file.pfx>");
-        // password integrity password
+        // password to ensure integrity
         keystore.load(fisKeyStore, "changeit".toCharArray());
         // list all alias entries in the keystore
         Enumeration<String> e = keystore.aliases();
