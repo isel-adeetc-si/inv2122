@@ -3,7 +3,7 @@ import javax.crypto.SecretKey;
 import java.security.*;
 import java.util.Arrays;
 
-public class DemoAsymmetricKeysAndSignature {
+public class AsymmetricKeysAndSignatureDemo {
     public static void main(String[] args) throws NoSuchAlgorithmException, SignatureException, InvalidKeyException {
         //demoKeys();
         KeyPairGenerator pairGen = KeyPairGenerator.getInstance("RSA");
