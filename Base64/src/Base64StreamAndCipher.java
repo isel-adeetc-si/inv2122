@@ -27,7 +27,6 @@ public class Base64StreamAndCipher {
         // write some extra info (just to show it is possible)
         out.write(new byte[]{'e','x','t','r','a'});
         out.write(rawBytes);
-        out.write('a');
         out.close();
 
         //...
