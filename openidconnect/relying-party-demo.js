@@ -9,8 +9,8 @@ var jwt = require('jsonwebtoken');
 const port = 3001
 
 // system variables where RP credentials are stored
-const CLIENT_ID = "531431470926-6rjfsdk5j92fa4gphplutp6c640arf3v.apps.googleusercontent.com" //process.env.CLIENT_ID
-const CLIENT_SECRET = "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" //process.env.CLIENT_SECRET
+const CLIENT_ID = process.env.CLIENT_ID
+const CLIENT_SECRET = process.env.CLIENT_SECRET
 const CALLBACK = 'callbackdemo'
 
 app.get('/', (req, resp) => {
